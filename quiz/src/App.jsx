@@ -4,7 +4,6 @@ import Home from './pages/home';
 import Quiz from './pages/quiz';
 import Result from './pages/result';
 import Navbar from "./components/navbar";
-import './App.css';
 
 
 

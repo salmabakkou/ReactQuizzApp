@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+
+body {
+  margin: 0;
+}
+
+/* ---- navbar ---- */
+nav {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 10;
+}
+
+.logo {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 100;
+  font-size: 25px;
+  font-style: normal;
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---- page d'acceuil ---- */
+.home {
+  background-image: url("/backgroundHome.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home::before{
+    content: "";
+    background: rgb(0, 0, 0,0.5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+
+}
+.home >*{
+    position: relative;
+    z-index: 2;
+}
+.home h1{
+    display: flex;
+    background-color: rgb(171, 51, 186,80%) ;
+    height: 80px;
+    align-items: center;
+    color: white;
+}
+.home button{
+    width: 147px;
+    height: 57px;
+    border-radius: 20px;
+    color: #AB33BA ;
+    box-shadow: #AB33BA 0 4px 4px 0;
+    font-size: 25px;
+    font-weight:bold;
+}
