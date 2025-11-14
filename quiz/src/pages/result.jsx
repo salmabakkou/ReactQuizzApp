@@ -8,10 +8,10 @@ export default function Result() {
   const total=10;
 
   return (
-    <div>
-      <h1> Result </h1>
-      <h1>{result}/{total}</h1>
-      <button onClick={() => navigate('/')}>restart Quiz</button>
+    <div class="result background">
+      <h1> score </h1>
+      <h2>{result}/{total}</h2>
+      <button className='btn' onClick={() => navigate('/quiz')}>restart Quiz</button>
     </div>
   )
 }

@@ -31,7 +31,7 @@ export default function Quiz() {
 
 
   return (
-    <div class="quiz">
+    <div class="quiz background">
        <section>
         <h1>{questions[indexQuestion].question}</h1>
         <div class="option">

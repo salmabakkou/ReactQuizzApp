@@ -8,9 +8,9 @@ export default function Home() {
   const navigate=useNavigate();
   return (
     <div className='home'>
-      
+
         <h1>Ready to test your web development skills?</h1>
-        <button onClick={() => navigate('/quiz')} >Start Quiz</button>
+        <button class="btn" onClick={() => navigate('/quiz')} >Start Quiz</button>
        
     </div>
   )

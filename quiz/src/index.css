@@ -71,7 +71,7 @@ ul {
     color: white;
      text-shadow: 2px 2px #AB33BA;
 }
-.home button {
+.btn {
     background-color:blueviolet; 
     color: white;
     border: none;
@@ -85,13 +85,13 @@ ul {
 
 }
 
-.home button:hover {
+.btn:hover {
     background-color: #AB33BA; 
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px #AB33BA;
+    box-shadow: 0 5px 15px blueviolet;
 }
 /* ---- page quiz ---- */
-.quiz {
+.background {
   background-image: url("/background.jpg");
   background-size: cover;
   background-position: center;
@@ -102,7 +102,7 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.quiz::before{
+.background::before{
     content: "";
     background: rgb(0, 0, 0,0.5);
     width: 100%;
@@ -111,7 +111,7 @@ ul {
     z-index: 1;
 
 }
-.quiz >*{
+.background >*{
     position: relative;
     z-index: 2;
 }
@@ -131,8 +131,6 @@ ul {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
-    
-
 }
 .option button{
     padding: 20px;
@@ -147,4 +145,19 @@ ul {
 }
 .option button:hover{
     background-color:blueviolet; 
+}
+/* ---- page quiz ---- */
+.result {
+    color: white;
+}
+.result h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     border-radius: 50%;
+     background-color: #AB33BA;
+     box-shadow: 0 5px 15px blueviolet;
+    border: 10px solid #AB33BA;
+    width: 200px;
+    height: 200px;
 }
