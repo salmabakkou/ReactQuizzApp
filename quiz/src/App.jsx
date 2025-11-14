@@ -4,7 +4,7 @@ import Home from './pages/home';
 import Quiz from './pages/quiz';
 import Result from './pages/result';
 import Navbar from "./components/navbar";
-
+import Footer from "./components/footer";
 
 
 function App(){
@@ -12,6 +12,7 @@ function App(){
 
   <BrowserRouter>
       <Navbar/>
+      <Footer/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quiz" element={<Quiz />} />
