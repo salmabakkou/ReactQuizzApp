@@ -31,13 +31,17 @@ export default function Quiz() {
 
 
   return (
-      <div>
+    <div class="quiz">
+       <section>
         <h1>{questions[indexQuestion].question}</h1>
-    {
-        questions[indexQuestion].options.map((option,index)=>(
-        <button key={index} onClick={()=>{handleScore(option),nextQuestion()}}>{option}</button>
-    ))
-   }
+        <div class="option">
+            {
+                questions[indexQuestion].options.map((option,index)=>(
+                <button  key={index} onClick={()=>{handleScore(option),nextQuestion()}}>{option}</button>
+            ))
+            }
+        </div>
+      </section>
     </div>
   )
 }
