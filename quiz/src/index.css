@@ -6,7 +6,7 @@ body {
 /* ---- navbar ---- */
 nav {
   display: flex;
-  gap: 180px;
+  gap: 170px;
   align-items: center;
   position: absolute;
   top: 0;
@@ -17,7 +17,7 @@ nav {
 .logo {
   font-family: "Press Start 2P", system-ui;
   font-weight: 100;
-  font-size: 25px;
+  font-size: 20px;
   padding-left: 20px;
   font-style: normal;
   color: white;
@@ -76,7 +76,6 @@ ul {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px #AB33BA;
-
 }
 .btn:hover {
     background-color: #AB33BA; 
@@ -164,5 +163,5 @@ ul {
     height: 50px;
     background-color:blueviolet ;
     color: white;
-    font-size: small;
+    font-size:x-small;
 }

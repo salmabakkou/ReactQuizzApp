@@ -3,7 +3,6 @@ import questions from '../data/questions';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
 export default function Quiz() {
     const [indexQuestion,setIndexQuestion]=useState(0);
     const [score,setScore]=useState(0);
@@ -18,7 +17,6 @@ export default function Quiz() {
           setIndexQuestion(indexQuestion+1)
         } 
     }
-
     const handleScore =(option)=>{
       
       if(option===questions[indexQuestion].answer){
@@ -27,14 +25,11 @@ export default function Quiz() {
         
       }
     }
-
-
-
   return (
-    <div class="quiz background">
+    <div className="quiz background">
        <section>
         <h1>{questions[indexQuestion].question}</h1>
-        <div class="option">
+        <div className="option">
             {
                 questions[indexQuestion].options.map((option,index)=>(
                 <button  key={index} onClick={()=>{handleScore(option),nextQuestion()}}>{option}</button>
