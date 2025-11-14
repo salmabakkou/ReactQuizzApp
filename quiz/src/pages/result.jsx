@@ -9,7 +9,9 @@ export default function Result() {
   const total=10;
 
   const affichageMessage = () => {
-    if (result <= 3) {
+    if(result==0){
+      return "score";
+    }else if (result <= 3) {
       return "😔 Oups… ce n’était pas ton jour. Essaie encore, tu vas y arriver !";
     } else if (result <= 5) {
       return "🙂 Pas mal ! Tu es sur la bonne voie.";
